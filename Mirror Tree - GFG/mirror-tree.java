@@ -134,14 +134,8 @@ class Solution {
         }
         mirror(node.left);
         mirror(node.right);
-            Node tem=node.left;
-            node.left=node.right;
-            node.right=tem;
-        // }else
-        // {
-        // mirror(node.right);
-        // System.out.print(node.data + " ");
-        // mirror(node.left);
-        // }
+        Node tem=node.left;
+        node.left=node.right;
+        node.right=tem;
     }
 }
